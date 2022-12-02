@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GPStools</class>
+ <widget class="QWidget" name="GPStools">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>982</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GPS tools</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="Search">
+     <item>
+      <widget class="QGroupBox" name="Address2GPS">
+       <property name="title">
+        <string>地址转经纬度</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="H11">
+          <item>
+           <widget class="QLabel" name="AddressLabel">
+            <property name="text">
+             <string>地址：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Address"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="tencent_rd_1">
+          <property name="text">
+           <string>腾讯</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup1</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="baidu_rd_1">
+          <property name="text">
+           <string>百度</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup1</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="gaode_rd_1">
+          <property name="text">
+           <string>高德</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup1</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H12">
+          <item>
+           <widget class="QPushButton" name="Submit1">
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="hs11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="GPS2Address">
+       <property name="title">
+        <string>经纬度转地址</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="H21" stretch="1,2,2">
+          <item>
+           <widget class="QLabel" name="LongLabel">
+            <property name="text">
+             <string>经度：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LongText"/>
+          </item>
+          <item>
+           <spacer name="hs21">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H22" stretch="1,2,2">
+          <item>
+           <widget class="QLabel" name="LatLabel">
+            <property name="text">
+             <string>维度：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LatText"/>
+          </item>
+          <item>
+           <spacer name="hs22">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H23">
+          <item>
+           <widget class="QRadioButton" name="tencent_rd_2">
+            <property name="text">
+             <string>腾讯</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="baidu_rd_2">
+            <property name="text">
+             <string>百度</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="gaode_rd_2">
+            <property name="text">
+             <string>高德</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup2</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H24">
+          <item>
+           <widget class="QPushButton" name="Submit2">
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="hs23">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="BatchConvert">
+       <property name="title">
+        <string>地址批量转换</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="H31" stretch="1,2">
+          <item>
+           <widget class="QPushButton" name="OpenFileButton">
+            <property name="text">
+             <string>文件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="FileLabel">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H32">
+          <item>
+           <widget class="QRadioButton" name="tencent_rd_3">
+            <property name="text">
+             <string>腾讯</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup3</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="baidu_rd_3">
+            <property name="text">
+             <string>百度</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup3</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="gaode_rd_3">
+            <property name="text">
+             <string>高德</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup3</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H33">
+          <item>
+           <spacer name="hs31">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="ExportFile">
+            <property name="text">
+             <string>导出数据</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="H34">
+          <item>
+           <widget class="QPushButton" name="Submit3">
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="hs32">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="Display">
+     <property name="title">
+      <string>信息</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QTextBrowser" name="Text2"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="H41">
+        <item>
+         <widget class="QPushButton" name="ClearButton">
+          <property name="text">
+           <string>清空</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup2"/>
+  <buttongroup name="buttonGroup3"/>
+  <buttongroup name="buttonGroup1"/>
+ </buttongroups>
+</ui>

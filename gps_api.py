@@ -13,7 +13,7 @@ class GPS_API:
         :return: 经度和维度
         """
         parameters = {
-                        'ak': 'UHRilFN3503Np0VlRhGzgInVSIApv5nx',
+                        'ak': 'xxxx',
                         'address': address,
                         'output' : 'json',
                         'callback' : 'showLocation'
@@ -40,7 +40,7 @@ class GPS_API:
         """
         # 在高德地图开发者平台（https://lbs.amap.com/）申请的key，需要替换为自己的key
         parameters = {
-                        'key': 'ec08a1bb166020f12d6c1d66e9bf1bbc',
+                        'key': 'xxxx',
                         'address': address,
                      }
         try:
@@ -61,7 +61,7 @@ class GPS_API:
         """
         parameters = {
                         'location': location,
-                        'key': 'ec08a1bb166020f12d6c1d66e9bf1bbc'
+                        'key': 'xxxx'
                      }
         try:
             base = 'http://restapi.amap.com/v3/geocode/regeo?'
@@ -83,7 +83,7 @@ class GPS_API:
         """
         parameters = {
                     'address': address,
-                    'key': 'RBRBZ-WZICJ-3KOFO-KDB5M-VHW4Z-CUBYG',
+                    'key': 'xxxx',
                      }
         try:
             base = 'https://apis.map.qq.com/ws/geocoder/v1/?'
